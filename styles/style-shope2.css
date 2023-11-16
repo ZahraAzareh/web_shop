@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "TTNorms";
+    src: url('../fonts/TTNorms-Light.otf');
+}
+@font-face {
+    font-family: "TTNorms Medium";
+    src: url('../fonts/TTNorms-Medium.otf');
+}
+@font-face {
+    font-family: "TTNorms Light";
+    src: url('../fonts/TTNorms-Regular.otf');
+}
+@font-face {
+    font-family: "TTNorms Roman Iltalic";
+    src: url('../fonts/Times-new-roman-italic.ttf');
+}
+@keyframes rot {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    65%{transform: rotate(0deg)}
+    75%{transform: rotate(-180deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes bg-changer { 
+   0%{background-color: #6041d1;}
+   25%{background-color: #482cac;}
+   100%{background-color: #6041d1;}
+
+  }
+@keyframes example {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform:scale(1);}
+
+}
+@keyframes fit {
+    from{transform: scale(1);}
+    to{transform: scale(1);}
+
+}
+@keyframes skw {
+    0%{transform: skew(1deg);}
+    50%{transform: skew(20deg);}
+    65%{transform: skew(-20deg);}
+    100%{transform: skew(1deg);}
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation-name: bg-changer;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;}
+/* header */
+.header{
+    padding: 0 5rem;
+    background:linear-gradient(#6041d1,#2e86de,#6041d1);
+    box-shadow: 0px 5px 20px #6041d1;
+}
+.header-container{
+    min-width: 35rem;
+   min-height: 10rem;
+   padding: 0 5rem;
+   margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.left-header{
+    display: flex;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+
+    min-height: 10rem;
+    display: flex;
+    list-style-type: none;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap: nowrap;
+}
+li{
+    margin-right: 1rem;
+    min-width: 2rem;
+    min-height: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    border: 1px solid #00eeff;
+    box-shadow:1px 1px 10px #00eeff ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    cursor: pointer;
+    font-family: "TTNORMS";
+
+}
+
+li li{
+    min-width: 7rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    margin: 1px 0;
+    animation-name:fit ;
+}
+ul li ul{
+    width: 3rem;
+    height: 2rem;
+    list-style-type: none;
+    margin-left: -1.5rem;
+    margin-bottom: -5.3rem;
+
+}
+li>ul{
+    display: none;
+}
+li:hover ul{
+display: block;
+
+
+}
+ul a{
+    color: black;
+    text-decoration: none;
+}
+li:hover{
+    box-shadow: 1px 1px 20px #00eeff ;
+    
+
+}
+li:hover.menu-item{
+    animation-name: fit;
+}
+ul li ul:hover {
+    display: block;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.header-logo{
+}
+.right-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.commnet-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comments-btn{
+    animation-name: rot;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #00eeff;
+    box-shadow: 1px 1px 10px #00eeff;
+
+}
+.comments-btn:hover{
+    animation-name: fit;
+
+}
+
+
+/* content */
+.content{
+    /* background:linear-gradient(#6041d1,#00eeff,#6041d1); */
+  
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.row1{
+    height: 17rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+figcaption{
+    margin-top: 0.8rem;
+    /* background-color: #cecece; */
+    border-top: 1px solid rgb(139, 139, 139);
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    /* border-radius: 0.5rem; */
+    font-family: "TTNOrms";
+}
+.img-content{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+.pic-container{
+    height:15rem ;
+    width: 17rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px #464646,
+     -5px 0 5px #464646; 
+    font-family: "TTNOrms";
+    transition: all 1s;
+    cursor: pointer;
+}
+.pic-container:hover{
+    transform:  translateY(-0.5rem);
+    opacity: 0.8;
+    
+}
+/* slider */
+.slider{
+    text-align: center;
+}
+.slider a{
+    color: #fff;
+    text-decoration: none;
+}
+.dote{
+    width: 10px;
+    height: 10px;
+    background-color: #00eeff;
+    padding-left: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    color: #464646;
+    
+
+}
+#two-slid{
+    opacity: 0.5;
+}
+/* footer */
+.footer-container{
+    min-width: 30rem;
+    min-height: 10rem;
+    padding: 0 5rem;
+    margin: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background:linear-gradient(#6041d1,#2e86de,#6041d1);
+     box-shadow: 0px -5px 20px #6041d1;
+
+    }
+.footer-title{
+    font-family: "TTNORMS MEDIUM";
+}
+.footer-text{
+    color: black;
+}
+.info{
+    font-family: "TTNORMS";
+    text-align: center;
+    color: black;
+}
+
+.social-media a{
+    padding-left: 1rem;
+}
+.title-sm{
+font-family: "TTNORMS MEDIUM";
+color: black;
+}
+
+
+

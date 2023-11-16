@@ -1,0 +1,450 @@
+@keyframes anime {
+    0%{transform: scale(0) translateY(0);
+    rotate: (70deg);
+    }
+    100%{
+        transform: scale(1.3) translateY(-100px)
+        rotate(360deg);
+    }
+}
+@keyframes rot {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    65%{transform: rotate(0deg)}
+    75%{transform: rotate(-180deg);}
+    100%{transform: rotate(0deg);}
+}
+@font-face {
+    font-family: "TTNorms";
+    src: url('../fonts/TTNorms-Light.otf');
+}
+@font-face {
+    font-family: "TTNorms Medium";
+    src: url('../fonts/TTNorms-Medium.otf');
+}
+@font-face {
+    font-family: "TTNorms Light";
+    src: url('../fonts/TTNorms-Regular.otf');
+}
+@font-face {
+    font-family: "TTNorms Roman Iltalic";
+    src: url('../fonts/Times-new-roman-italic.ttf');
+}
+@keyframes example {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform:scale(1);}
+}
+@keyframes fit {
+    from{transform: scale(1);}
+    to{transform: scale(1);}
+
+}
+@keyframes skw {
+    0%{transform: skew(1deg);}
+    50%{transform: skew(20deg);}
+    65%{transform: skew(-20deg);}
+    100%{transform: skew(1deg);}
+}
+@keyframes login {
+    0%{transform: rotate(1deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(1deg);}
+}
+@keyframes bg-changer { 
+    0%{background-color: #6041d1;}
+    25%{background-color: #482cac;}
+    100%{background-color: #6041d1;}
+ 
+   }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logpage{
+    width: 100%;
+    position: absolute;
+}
+.wrapper{
+    width: 100%;
+    height: 135%;
+    position: absolute;
+    animation-name: bg-changer;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;}
+.wrapper div{
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 50px;
+    position:absolute;
+    top: 10%;
+    left: 10%;
+}
+.wrapper .dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background:rgba(255,255,255,0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+.wrapper div:nth-child(1){
+    top: 20%;
+    left: 20%;
+    animation: anime 8s linear infinite;
+
+}
+.wrapper div:nth-child(2){
+    top: 60%;
+    left: 80%;
+    animation: anime 10s linear infinite;
+
+}
+.wrapper div:nth-child(3){
+    top: 40%;
+    left: 40%;
+    animation: anime 3s linear infinite;
+
+}
+.wrapper div:nth-child(4){
+    top: 66%;
+    left: 30%;
+    animation: anime 7s linear infinite;
+
+}
+.wrapper div:nth-child(5){
+    top: 90%;
+    left: 10%;
+    animation: anime 9s linear infinite;
+
+}
+.wrapper div:nth-child(6){
+    top: 30%;
+    left: 60%;
+    animation: anime 5s linear infinite;
+
+}
+.wrapper div:nth-child(7){
+    top: 70%;
+    left: 20%;
+    animation: anime 8s linear infinite;
+
+}
+.wrapper div:nth-child(8){
+    top: 75%;
+    left: 60%;
+    animation: anime 10s linear infinite;
+
+}
+.wrapper div:nth-child(9){
+    top: 50%;
+    left: 50%;
+    animation: anime 6s linear infinite;
+
+}
+.wrapper div:nth-child(10){
+    top: 45%;
+    left: 20%;
+    animation: anime 10s linear infinite;
+
+}
+.wrapper div:nth-child(11){
+    top: 10%;
+    left: 90%;
+    animation: anime 9s linear infinite;
+
+}
+.wrapper div:nth-child(12){
+    top: 20%;
+    left: 70%;
+    animation: anime 7s linear infinite;
+
+}
+.wrapper div:nth-child(13){
+    top: 20%;
+    left: 5%;
+    animation: anime 8s linear infinite;
+
+}
+.wrapper div:nth-child(14){
+    top: 60%;
+    left: 5%;
+    animation: anime 6s linear infinite;
+
+}
+.wrapper div:nth-child(15){
+    top: 90%;
+    left: 80%;
+    animation: anime 9s linear infinite;
+}
+.header{
+    padding: 0 5rem;
+    background:linear-gradient(#6041d1,#2e86de,#6041d1);
+    box-shadow: 0px 5px 20px #6041d1;
+
+}
+.header-container{
+    min-width: 35rem;
+   min-height: 10rem;
+   padding: 0 5rem;
+   margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.left-header{
+    display: flex;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+
+    min-height: 10rem;
+    display: flex;
+    list-style-type: none;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap: nowrap;
+}
+li{
+    margin-right: 1rem;
+    min-width: 2rem;
+    min-height: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    border: 1px solid #00eeff;
+    box-shadow:1px 1px 10px #00eeff ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    cursor: pointer;
+    font-family: "TTNORMS";
+
+}
+
+li li{
+    min-width: 7rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    margin: 1px 0;
+    animation-name:fit ;
+}
+ul li ul{
+    width: 3rem;
+    height: 2rem;
+    list-style-type: none;
+    margin-left: -1.5rem;
+    margin-bottom: -5.3rem;
+
+}
+li>ul{
+    display: none;
+}
+li:hover ul{
+display: block;
+
+
+}
+ul a{
+    color: black;
+    text-decoration: none;
+}
+li:hover{
+    box-shadow: 1px 1px 20px #00eeff ;
+    
+
+}
+li:hover.menu-item{
+    animation-name: fit;
+}
+ul li ul:hover {
+    display: block;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.header-logo{
+}
+.right-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.commnet-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comments-btn{
+    animation-name: rot;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #00eeff;
+    box-shadow: 1px 1px 10px #00eeff;
+
+}
+.comments-btn:hover{
+    animation-name: fit;
+
+}
+/* login box */
+.welcome-title{
+    font-family: "TTNorms";
+    text-align: center;
+    color: #fff;
+}
+.login{
+ 
+
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+
+}
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    min-height: 30rem;
+    background-color: #0099ff;
+    border-radius:1rem;
+    font-family: "TTNorms";
+}
+input[type=password],[type=text],[type=email],[type=date],[type=tel]{
+    background-color: #0099ff;
+    width: 15rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #6114a0;
+    color: #b4feff;
+    font-family: "TTNOrms";
+}
+input[type=password],[type=text]:hover{
+
+}
+
+.login-btn{
+    animation-name: fit;
+    width: 10rem;
+    background-color: #119dff;
+    border: none;
+}
+
+.login-btn:hover{
+    /* animation: login;
+    animation-duration: 2s; */
+    box-shadow:
+     0 0 5px #00eeff,
+     0 0 10px #00eeff,
+     0 0 15px #00eeff;
+}
+.forgot-new{
+text-align: center;
+}
+.forgot-new a{
+    text-decoration: none;
+    color: #6114a0;
+
+}
+.forgot-link{
+    
+}
+.login-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.new-account{
+ text-align: center;
+}
+.new-account a{
+    text-decoration: none;
+    color: #6114a0;
+}
+/* website footer */
+.footer-container{
+    min-width: 30rem;
+    min-height: 10rem;
+    padding: 0 5rem;
+    margin: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background:linear-gradient(#6041d1,#2e86de,#6041d1);
+    }
+.footer-title{
+    font-family: "TTNORMS MEDIUM";
+}
+.info{
+    font-family: "TTNORMS";
+    text-align: center;
+
+}
+
+.social-media a{
+    padding-left: 1rem;
+}
+.title-sm{
+font-family: "TTNORMS MEDIUM";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
